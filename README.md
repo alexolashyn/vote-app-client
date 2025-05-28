@@ -1,12 +1,33 @@
-# React + Vite
+# Vote App Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Це фронтенд частина проекту Vote App, створена з використанням React. Вона дозволяє користувачам брати участь у голосуваннях і переглядати їхні результати.
 
-Currently, two official plugins are available:
+## Особливості
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Аутентифікація користувачів**: Реєстрація, вхід та управління сесіями користувачів.
+- **Менеджмент організацій**: Створення нових та приєднання до вже створених організацій, перегляд списку учасників організації.
+- **Менеджмент голосувань**: Перегляд, створення та участь в голосуваннях в межах організації.
 
-## Expanding the ESLint configuration
+## Встановлення
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Передумови
+
+- Node.js (версія 14+)
+- npm або yarn
+
+### Налаштування
+
+1. Клонуйте репозиторій:
+   ```bash
+   git clone https://github.com/alexolashyn/vote-app-client.git
+   cd vote-app-client
+2. Встановіть залежності:
+   ```bash
+   npm install
+3. Створіть файл .env для змінних середовища. Приклад:
+   ```bash
+   VITE_VOTING_CONTRACT_ADDRESS=your_contract_address
+   VITE_API_BASE_URL=your_base_url
+4. Запустіть сервер для розробки
+   ```bash
+   npm run dev
