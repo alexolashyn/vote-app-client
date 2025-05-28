@@ -1,0 +1,17 @@
+export const SET_ALERT = 'SET_ALERT';
+export const REMOVE_ALERT = 'REMOVE_ALERT';
+export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
+export const REGISTER_FAIL = 'REGISTER_FAILED';
+export const AUTH_SUCCESS = 'AUTH_SUCCESS';
+export const AUTH_FAIL = 'AUTH_FAIL';
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGIN_FAIL = 'LOGIN_FAIL';
+export const LOGOUT = 'LOGOUT';
+export const DASHBOARD_SUCCESS = 'DASHBOARD_SUCCESS';
+export const ORG_CREATED = 'ORG_CREATED';
+export const ORG_SUCCESS = 'ORG_SUCCESS';
+export const ORG_FAIL = 'ORG_FAIL';
+export const POLL_FAIL = 'POLL_FAIL'
+export const WALLET_ADDRESS_SUCCESS = 'WALLET_ADDRESS_SUCCESS';
+export const CONTRACT_SUCCESS = 'CONTRACT_SUCCESS';
+export const WALLET_STATUS_SUCCESS = 'WALLET_STATUS_SUCCESS';
