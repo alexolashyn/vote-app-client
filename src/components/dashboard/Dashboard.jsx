@@ -113,6 +113,9 @@ const Dashboard = ({
 
             console.log('Registration failed:', error);
         }
+        finally {
+            setProcessing(false);
+        }
     };
 
     const sendRequestHandler = async () => {

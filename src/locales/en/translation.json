@@ -63,6 +63,7 @@
   "createPollSuccess": "New poll is successfully created!",
   "voteSuccess": "Your vote has been successfully recorded. Thank you for voting! The results will be available after the voting closes.",
   "voteFail": "Something went wrong. Your vote has not been recorded.",
+  "closePoll": "Close Poll",
   "closePollTitle": "Confirmation",
   "closePollMessage": "Are you sure you want to close the voting? This action cannot be undone, and no new votes will be accepted.",
   "metamask-cancel": "Transaction rejected by user.",

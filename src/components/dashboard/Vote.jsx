@@ -47,6 +47,9 @@ const Vote = ({
             setAlert('voteFail', 'danger');
             setOption('')
         }
+        finally {
+            setProcessing(false);
+        }
     };
 
 
