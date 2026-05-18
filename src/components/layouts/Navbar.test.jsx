@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import { BrowserRouter } from 'react-router-dom';
@@ -19,17 +19,6 @@ vi.mock('react-i18next', () => ({
     },
   }),
 }));
-
-const mockStore = configureStore({
-  reducer: {
-    auth: (state = { isAuthenticated: false }, action) => {
-      if (action.type === 'LOGIN_SUCCESS') {
-        return { ...state, isAuthenticated: true };
-      }
-      return state;
-    },
-  },
-});
 
 describe('Navbar Component', () => {
   const renderWithProviders = (isAuthenticated) => {

@@ -12,17 +12,6 @@ vi.mock('../../actions/auth', () => ({
 
 const TestComponent = () => <div>Protected Content</div>;
 
-const mockStore = configureStore({
-  reducer: {
-    auth: (state = { isAuthenticated: false }, action) => {
-      if (action.type === 'LOGIN_SUCCESS') {
-        return { ...state, isAuthenticated: true };
-      }
-      return state;
-    },
-  },
-});
-
 describe('PrivateRoute Component', () => {
   const renderWithProviders = (isAuthenticated) => {
     const store = configureStore({
