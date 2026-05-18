@@ -11,7 +11,7 @@ const Vote = ({
                   getPoll,
                   vote,
                   auth: {user},
-                  wallet: {address, contract},
+                  wallet: {contract},
                   setAlert
               }) => {
     const {t} = useTranslation();
